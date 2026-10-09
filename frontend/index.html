@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Web Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">Portfolio</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </nav>
+
+  <!-- Hero / About Section -->
+  <section id="about" class="section hero">
+    <div class="container">
+      <h1>Hello, I'm <span class="highlight">Kaushal Kumar</span></h1>
+      <p>A passionate Full Stack Web Developer & Backend Specialist.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">JavaScript / Node.js</div>
+        <div class="skill-card">Express.js & FastAPI</div>
+        <div class="skill-card">React.js</div>
+        <div class="skill-card">MongoDB & PostgreSQL</div>
+        <div class="skill-card">Docker & Redis</div>
+        <div class="skill-card">Python & C++</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Voice-to-Voice Healthcare Assistant</h3>
+          <p>Real-time AI voice assistant for hospital network queries using Gemini & Deepgram.</p>
+        </div>
+        <div class="project-card">
+          <h3>Token Bucket Rate Limiter</h3>
+          <p>High-throughput middleware built with Python, FastAPI, Redis, and Lua scripting.</p>
+        </div>
+        <div class="project-card">
+          <h3>Prescripto - Doctor Booking Platform</h3>
+          <p>Full-stack MERN appointment scheduling platform with integrated Stripe payments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" id="submitBtn">Send Message</button>
+        <p id="formResponse" class="response-msg"></p>
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
