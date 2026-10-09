@@ -57,50 +57,20 @@ Git
 MongoDB Atlas Account or local MongoDB server
 
 1. Clone the Repository
-Bash
-git clone [https://github.com/kaushalkumar08/responsive-portfolio-website.git](https://github.com/kaushalkumar08/responsive-portfolio-website.git)
-cd responsive-portfolio-website
+
 2. Configure & Start Backend
 Bash
 cd backend
 npm install
 Create a .env file in the backend/ folder:
 
-Code snippet
-PORT=3500
-MONGO_URI=mongodb+srv://<username>:<password>@cluster0.abcde.mongodb.net/portfolio_db?retryWrites=true&w=majority
-Start the backend server:
-
-Bash
-node server.js
-The server will run at http://localhost:3500.
-
 3. Run the Frontend
 Open frontend/script.js and ensure the API fetch endpoint matches your local backend URL:
-
-JavaScript
-fetch('http://localhost:3500/api/contact', { ... })
-Open frontend/index.html in your web browser or use the VS Code Live Server extension (http://127.0.0.1:5500).
 
 📡 API Endpoints
 POST /api/contact
 Stores a new message submitted through the portfolio contact form.
 
-Request Body:
-
-JSON
-{
-  "name": "Jane Doe",
-  "email": "jane@example.com",
-  "message": "Hello, I would like to get in touch!"
-}
-Success Response (201 Created):
-
-JSON
-{
-  "success": true,
-  "message": "Message sent successfully!"
-}
 🌐 Deployment Overview
 Backend: Deployed as a Web Service on Render with Root Directory set to backend.
 
