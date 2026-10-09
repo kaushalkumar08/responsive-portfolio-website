@@ -21,11 +21,11 @@ contactForm.addEventListener('submit', async (e) => {
   formResponse.textContent = 'Sending message...';
 
   try {
-    const res = await fetch('http://localhost:3500/api/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, email, message })
-    });
+    const res = await fetch('https://responsive-portfolio-website-1m5r.onrender.com/', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ name, email, message })
+});
 
     const data = await res.json();
 
